@@ -6,16 +6,22 @@ import os
 from pathlib import Path
 
 # Language default (environment variable)
-DEFAULT_LANGUAGE = os.getenv('DEFAULT_LANGUAGE', 'en-US')
+DEFAULT_LANGUAGE = os.getenv('DEFAULT_LANGUAGE', 'zh-CN')
 
 # OpenAI voice names mapped to edge-tts equivalents
 voice_mapping = {
-    'alloy': 'en-US-AvaNeural',
-    'echo': 'en-US-AndrewNeural',
-    'fable': 'en-GB-SoniaNeural',
-    'onyx': 'en-US-EricNeural',
-    'nova': 'en-US-SteffanNeural',
-    'shimmer': 'en-US-EmmaNeural'
+    #'alloy': 'en-US-AvaNeural',
+    #'echo': 'en-US-AndrewNeural',
+    #'fable': 'en-GB-SoniaNeural',
+    #'onyx': 'en-US-EricNeural',
+    #'nova': 'en-US-SteffanNeural',
+    #'shimmer': 'en-US-EmmaNeural'
+    'alloy': 'zh-CN-XiaoxiaoNeural',           # 小晓-女
+    'echo': 'zh-CN-YunjianNeural',             # 云间
+    'fable': 'zh-CN-XiaoyiNeural',             # 小艺-女
+    'onyx': 'zh-CN-YunxiNeural',               # 云犀
+    'nova': 'zh-CN-YunyangNeural',             # 云阳
+    'shimmer': 'zh-CN-liaoning-XiaobeiNeural'  # 辽宁-小北-女
 }
 
 def is_ffmpeg_installed():
