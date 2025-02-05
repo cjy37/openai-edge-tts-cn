@@ -15,7 +15,7 @@ load_dotenv()
 API_KEY = os.getenv('API_KEY', 'your_api_key_here')
 PORT = int(os.getenv('PORT', 5050))
 
-DEFAULT_VOICE = os.getenv('DEFAULT_VOICE', 'en-US-AvaNeural')
+DEFAULT_VOICE = os.getenv('DEFAULT_VOICE', 'zh-CN-YunyangNeural')
 DEFAULT_RESPONSE_FORMAT = os.getenv('DEFAULT_RESPONSE_FORMAT', 'mp3')
 DEFAULT_SPEED = float(os.getenv('DEFAULT_SPEED', 1.0))
 
